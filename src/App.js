@@ -48,7 +48,7 @@ const App = () => {
             />
           </li>
         </ul>
-        <Button title="Settings" _callback={SettingsBtn} />
+        <Button primary title="Settings" _callback={SettingsBtn} />
         <div className="timer-container">
           <div className="time-wrapper">
               <CountdownAnimation
@@ -61,8 +61,8 @@ const App = () => {
           </div>
         </div>
         <div className="button-wrapper">
-          <Button title="Start" activeClass={!startAnimate ? 'active' : undefined} _callback={startTimer} />
-          <Button title="Pause" activeClass={startAnimate ? 'active' : undefined} _callback={pauseTimer} />
+          <Button primary title="Start" activeClass={!startAnimate ? 'active' : undefined} _callback={startTimer} />
+          <Button primary title="Pause" activeClass={startAnimate ? 'active' : undefined} _callback={pauseTimer} />
         </div>
       </> : <SetPomodoro />}
     </div>

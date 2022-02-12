@@ -10,10 +10,10 @@ const CountdownAnimation = ({key, timer, animate, children}) => {
         key={key}
         isPlaying
         duration={timer * 60}
-        colors={"red"}
+        colors={"#6D7CFF"}
         strokeWidth={6}
         size={220}
-        trailColor="#0F1122"	
+        trailColor="white"	
         onComplete={ () => {
           stopAnimate()
         }}

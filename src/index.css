@@ -26,14 +26,15 @@ code {
 }
 
 .container {
-  color:#c9ccea;
+  color:#303F65;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: rgb(39,42,85);
-  background: radial-gradient(circle, #1E2140 0%, #151932 65%); 
+  /*background: rgb(39,42,85);
+  background: radial-gradient(circle, #1E2140 0%, #151932 65%); */
+  background: rgb(242,246,254);
 }
 
 .container h1 {
@@ -47,13 +48,13 @@ code {
   text-transform: uppercase;
   font-size: .8rem;
   padding:.3rem .3rem;
-  background-color: #0C0E1B;
+  background-color: #FCFDFF;
   border-radius: 1.5rem;
 }
 
 .active-label {
-  color: #0C0E1B;
-  background-color: #FE6F6B;
+  color:#efefef !important;
+  background-color: #6D7CFF !important;
 }
 
 .timer-container {
@@ -70,10 +71,8 @@ code {
   height: 15rem;
   width: 15rem;
   border-radius: 7.5rem;
-  color:#efefef;
-  background: #151932;
+  background: white;
   font-size: 3.5rem;
-  box-shadow: 1rem 1.5rem 2rem rgba(0,0,0,0.6)
 }
 
 .button-wrapper {
@@ -84,15 +83,25 @@ code {
 }
 
 button {
-  color:#efefef;
   font-size:0.8rem;
   padding: 0.5rem 1.2rem;
   border:none;
   border-radius:3rem;
   margin:0.2rem;;
-  background:#0C0E1B;
   min-width: 80px;
   cursor: pointer;
+}
+
+button.primary {
+  color:#efefef;
+  background:#6D7CFF;
+
+}
+
+button.secondary{
+color: #6D7CFF;
+background: #DFE4FE;
+
 }
 
 .button-wrapper button.activve {
@@ -110,8 +119,8 @@ button {
   height: 30px;
   width: 30px;
   padding: 2rem;
-  background-color: #0C0E1B;
-  color:#C9CCEA;
+  background-color: #DFE4FE;
+  color:#6D7CFF;
   border: none;
   border-radius: 50%;
   margin-right: 0.3rem;
