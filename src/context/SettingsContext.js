@@ -23,6 +23,7 @@ function SettingsContextProvider(props) {
   // pause animation fn
   function pauseTimer() {
     setStartAnimate(false)
+    console.log("paused")
   }
   // pass time to counter
   const children = ({ remainingTime }) => {
