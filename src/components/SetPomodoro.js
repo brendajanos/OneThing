@@ -46,7 +46,7 @@ const SetPomodoro = () => {
     <>
       <h1>The One Thing</h1>
       <div className="form-container">
-        <form noValidate onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <input
             className="input"
             spellCheck="false"
@@ -54,6 +54,8 @@ const SetPomodoro = () => {
             placeholder="Type your focus question!"
             name="question"
             onChange={handleChange}
+            minLength={4}
+            required
           />
           <div className="input-wrapper">
             <input
