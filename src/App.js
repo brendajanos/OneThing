@@ -3,6 +3,7 @@ import CountdownPage from "./components/CountdownPage"
 import SetPomodoro from "./components/SetPomodoro"
 import { SettingsContext } from "./context/SettingsContext"
 import useLocalStorage from "use-local-storage"
+import Demo from "./components/Fonts";
 
 
 const App = () => {
