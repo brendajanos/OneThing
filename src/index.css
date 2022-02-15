@@ -44,6 +44,7 @@ code {
   justify-content: center;
   min-height: 100vh;
   background: var(--background);
+  
 }
 
 .container h1 {
@@ -166,3 +167,39 @@ button.secondary {
 *:focus {
   outline-color: #303f65;
 }
+
+div[id^="font-picker"] .dropdown-button.dropdown-button {
+  background-color: #6d7cff1a;
+  color: #6d7cff;
+}
+div[id^="font-picker"] .dropdown-button.dropdown-button:hover {
+  background: var(--background);
+  background-color: #6d7cff1a;
+
+}
+
+div[id^="font-picker"] .dropdown-button.dropdown-button:focus {
+  background: var(--background);
+  background-color: #6d7cff1a;
+
+}
+
+div[id^="font-picker"] ul.font-list {
+  background: var(--background);
+  color: #6d7cff;
+  box-shadow: none;
+  border-radius: 1rem;
+
+}
+div#font-picker {
+  box-shadow: none;
+  color: var(--background);
+  font-size: 0.8rem;
+
+}
+
+::-webkit-scrollbar {
+  background: var(--background)}
+::-webkit-scrollbar-thumb {
+  background-color:#6d7cff;
+  border-radius: 1rem;}

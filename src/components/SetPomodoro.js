@@ -1,11 +1,12 @@
 import React, { useContext, useState } from "react"
 import { SettingsContext } from "../context/SettingsContext"
+import FontComponent from "./Fonts"
 
 const SetPomodoro = () => {
   const [newTimer, setNewTimer] = useState({
-    work: 30,
+    work: 25,
     short: 5,
-    long: 15,
+    long: 10,
     active: "work",
   })
 
@@ -84,6 +85,8 @@ const SetPomodoro = () => {
             Set Timer
           </button>
         </form>
+        <FontComponent />
+
       </div>
     </>
   )
