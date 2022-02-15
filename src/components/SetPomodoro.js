@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react"
 import { SettingsContext } from "../context/SettingsContext"
 import FontComponent from "./Fonts"
 
+
 const SetPomodoro = () => {
   const [newTimer, setNewTimer] = useState({
     work: 25,

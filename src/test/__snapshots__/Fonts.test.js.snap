@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Setting the pomodoro timer component matches the snapshot 1`] = `
+<div
+  className=""
+  id="font-picker"
+>
+  <button
+    className="dropdown-button"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    type="button"
+  >
+    <p
+      className="dropdown-font-family"
+    >
+      Open Sans
+    </p>
+    <p
+      className="dropdown-icon loading"
+    />
+  </button>
+</div>
+`;
