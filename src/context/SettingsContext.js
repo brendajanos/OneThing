@@ -8,6 +8,7 @@ function SettingsContextProvider(props) {
   const [executing, setExecuting] = useState({})
   const [startAnimate, setStartAnimate] = useState(false)
 
+
   function setCurrentTimer(active_state) {
     updateExecute({
       ...executing,
@@ -63,6 +64,7 @@ function SettingsContextProvider(props) {
 
   function stopAnimate() {
     setStartAnimate(false)
+
   }
 
   return (
