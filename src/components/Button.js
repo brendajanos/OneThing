@@ -1,8 +1,8 @@
 const Button = (props) => {
-  const { title, activeClass = "", primary = false, onClick } = props
+  const { title, activeClass = "", primary = false, onClick, type="button" } = props
 
   return (
-    <button className={`${activeClass} ${primary ? "primary" : "secondary"}`} onClick={onClick}>
+    <button className={`btn ${activeClass} ${primary ? "primary" : "secondary"}`} onClick={onClick} type={type}>
       {title}
     </button>
   )

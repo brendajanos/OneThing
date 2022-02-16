@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react"
 import { SettingsContext } from "../context/SettingsContext"
 import FontComponent from "./Fonts"
-
+import Button from "./Button"
 
 const SetPomodoro = () => {
   const [newTimer, setNewTimer] = useState({
@@ -82,12 +82,11 @@ const SetPomodoro = () => {
               value={newTimer.long}
             />
           </div>
-          <button type="submit" secondary>
+          <Button type="submit" primary title="Set Timer">
             Set Timer
-          </button>
+          </Button>
         </form>
         <FontComponent />
-
       </div>
     </>
   )

@@ -13,7 +13,7 @@ export default class FontComponent extends Component {
         return (
             <div>
                 <FontPicker
-                    apiKey="AIzaSyB6Ctjl4FwqJBiPKb1DFBpj7UUeuEX5Gyg" //HIDE IT
+                    apiKey="AIzaSyB6Ctjl4FwqJBiPKb1DFBpj7UUeuEX5Gyg" 
                     activeFontFamily={this.state.activeFontFamily}
                     onChange={(nextFont) =>
                         this.setState({

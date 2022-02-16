@@ -8,7 +8,6 @@ function SettingsContextProvider(props) {
   const [executing, setExecuting] = useState({})
   const [startAnimate, setStartAnimate] = useState(false)
 
-
   function setCurrentTimer(active_state) {
     updateExecute({
       ...executing,
@@ -17,14 +16,16 @@ function SettingsContextProvider(props) {
     setTimerTime(executing)
   }
 
-  // start animation fn
   function startTimer() {
     setStartAnimate(true)
   }
-  // pause animation fn
+
   function pauseTimer() {
     setStartAnimate(false)
-    console.log("paused")
+  }
+
+  function stopAnimate() {
+    setStartAnimate(false)
   }
   // pass time to counter
   const children = ({ remainingTime }) => {
@@ -45,26 +46,21 @@ function SettingsContextProvider(props) {
     setTimerTime(updatedSettings)
   }
 
-  const setTimerTime = (evaluate) => {
-    switch (evaluate.active) {
+  const setTimerTime = (timeAmount) => {
+    switch (timeAmount.active) {
       case "work":
-        setPomodoro(evaluate.work)
+        setPomodoro(timeAmount.work)
         break
       case "short":
-        setPomodoro(evaluate.short)
+        setPomodoro(timeAmount.short)
         break
       case "long":
-        setPomodoro(evaluate.long)
+        setPomodoro(timeAmount.long)
         break
       default:
         setPomodoro(0)
         break
     }
-  }
-
-  function stopAnimate() {
-    setStartAnimate(false)
-
   }
 
   return (
