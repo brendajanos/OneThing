@@ -26,28 +26,6 @@ input[type="number"] {
   --secondary-text: #303f65b3;
 }
 
-/* Font selectors  */
-
-.container[data-font="roboto"]{
-  font-family: "Roboto";
-}
-
-.container[data-font="courier-new"]{
-  font-family:"Courier New"
-}
-
-.container[data-font="arial"]{
-  font-family:"Arial"
-}
-
-.container[data-font="cambria"]{
-  font-family:"Cambria";
-}
-
-.container[data-font="verdana"]{
-  font-family:"Verdana";
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",

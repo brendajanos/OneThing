@@ -27,7 +27,7 @@ function SettingsContextProvider(props) {
   function stopAnimate() {
     setStartAnimate(false)
   }
-  // pass time to counter
+
   const children = ({ remainingTime }) => {
     const minutes = Math.floor(remainingTime / 60)
     const seconds = remainingTime % 60
@@ -35,7 +35,6 @@ function SettingsContextProvider(props) {
     return `${minutes}:${seconds}`
   }
 
-  // clear session storage
   const SettingsBtn = () => {
     setExecuting({})
     setPomodoro(0)

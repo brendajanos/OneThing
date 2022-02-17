@@ -28,7 +28,6 @@ const App = () => {
         {pomodoro !== 0 ? <CountdownPage /> : <SetPomodoro />}
         <div className="circle-buttons">
           <CircleButton onClick={switchTheme} title= {theme === "light" ? "🌙" : "🔆"}/>
-          <CircleButton onClick={switchTheme} title= {theme === "light" ? "🌙" : "🔆"}/>
         </div>
       </div>
     </div>
